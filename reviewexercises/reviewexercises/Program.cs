@@ -1,8 +1,13 @@
-﻿using MyLibrary;
-internal class Program
+﻿using System;
+using MyLibrary;
+
+namespace reviewexercises
 {
-    private static void Main(string[] args)
+    internal class program
     {
-        Console.WriteLine("Hello, World!");
+        private static void Main(string[] args)
+        {
+            Console.WriteLine(MyMath.SecondsTo24Format(UserInteraction.UserIntputInt()));
+        }
     }
 }
